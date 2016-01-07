@@ -17,7 +17,10 @@ namespace Vsite.CSharp
 
         // TODO: Dodati novo svojstvo PreopterećenoSvojstvo koje će biti tipa int. Sadržaj prozora Output s pogreškom prevoditelja prekopirati u datoteku PreopterecenoSvojstvo.txt
 
-
+      //  public int Preopterecenosvojstvo
+      //  {
+      //      get {  return (int) Math.PI;
+      //  }
 
 
         static void Main(string[] args)

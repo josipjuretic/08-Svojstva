@@ -17,7 +17,21 @@ namespace Vsite.CSharp
 
         // TODO: Definirati svojstvo s parametrom (indekser) tipa int koji će provjerati proslijeđeni indeks i bacati iznimku tipa IndexOutOfRangeException za slučaj neispravnog indeksa
         // Provjeriti ispravnost koda izvođenjem metode Main
-
+        public string this[int index]
+        {
+            get
+            {
+                if (index < 0 || index >= m_items.Length)
+                    throw new ArgumentOutOfRangeException();
+                return m_items[index];
+            }
+            set
+            {
+                if (index < 0 || index >= m_items.Length)
+                    throw new ArgumentOutOfRangeException();
+                m_items[index] = value;
+            }
+        }
     
     }
 

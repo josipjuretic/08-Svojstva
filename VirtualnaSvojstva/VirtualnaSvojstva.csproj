@@ -36,6 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Identifikacija.cs" />
     <Compile Include="Osoba.cs" />
     <Compile Include="VirtualnaSvojstva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

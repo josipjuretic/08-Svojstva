@@ -17,8 +17,16 @@ namespace Vsite.CSharp
             }
 
 
-            // TODO: Promijeniti get metodu svojstva Namirnice tako da se onemogući promjena sadržaja liste izvan klase (tj. da naredba Debug.Assert u metodi Main ne baci iznimku)
-            public List<string> Namirnice { get; private set; }
+            // Promijeniti get metodu svojstva Namirnice tako da se onemogući promjena sadržaja liste izvan klase (tj. da naredba Debug.Assert u metodi Main ne baci iznimku)
+            public List<string> Namirnice { 
+                get
+                {
+                return New List<String>(m_lista);
+            }
+                private set; 
+            {
+                m_lista = value;
+            }
         }
 
 
@@ -34,5 +42,6 @@ namespace Vsite.CSharp
 
             Console.ReadKey();
         }
-    }
+    
+public  object m_lista { get; set; }}
 }
